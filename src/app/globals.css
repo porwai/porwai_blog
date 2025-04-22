@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 37 99 235; /* Blue-600 */
+  --primary-foreground: 255 255 255;
+  
+  --secondary: 226 232 240; /* Slate-200 */
+  --secondary-foreground: 15 23 42; /* Slate-900 */
+  
+  --accent: 224 242 254; /* Sky-100 */
+  --accent-foreground: 3 105 161; /* Sky-800 */
+  
+  --destructive: 239 68 68; /* Red-500 */
+  --destructive-foreground: 255 255 255;
+  
+  --background: 255 255 255;
+  --foreground: 15 23 42; /* Slate-900 */
+  
+  --card: 255 255 255;
+  --card-foreground: 15 23 42; /* Slate-900 */
+  
+  --popover: 255 255 255;
+  --popover-foreground: 15 23 42; /* Slate-900 */
+  
+  --muted: 241 245 249; /* Slate-100 */
+  --muted-foreground: 100 116 139; /* Slate-500 */
+  
+  --border: 226 232 240; /* Slate-200 */
+  --input: 226 232 240; /* Slate-200 */
+  
+  --radius: 0.5rem;
+}
+
+.dark {
+  --primary: 59 130 246; /* Blue-500 */
+  --primary-foreground: 255 255 255;
+  
+  --secondary: 51 65 85; /* Slate-700 */
+  --secondary-foreground: 241 245 249; /* Slate-100 */
+  
+  --accent: 12 74 110; /* Sky-900 */
+  --accent-foreground: 186 230 253; /* Sky-200 */
+  
+  --destructive: 248 113 113; /* Red-400 */
+  --destructive-foreground: 255 255 255;
+  
+  --background: 15 23 42; /* Slate-900 */
+  --foreground: 241 245 249; /* Slate-100 */
+  
+  --card: 30 41 59; /* Slate-800 */
+  --card-foreground: 241 245 249; /* Slate-100 */
+  
+  --popover: 30 41 59; /* Slate-800 */
+  --popover-foreground: 241 245 249; /* Slate-100 */
+  
+  --muted: 51 65 85; /* Slate-700 */
+  --muted-foreground: 148 163 184; /* Slate-400 */
+  
+  --border: 51 65 85; /* Slate-700 */
+  --input: 51 65 85; /* Slate-700 */
+}
+
+@layer base {
+  * {
+    border-color: rgb(var(--border) / 0.2);
+  }
+  body {
+    background-color: rgb(var(--background));
+    color: rgb(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(var(--muted));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--primary) / 0.5);
+    border-radius: 9999px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--primary) / 0.7);
+  }
+}
