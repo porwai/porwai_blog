@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Por's Blog / Portfolio Website
 
-## Getting Started
+A modern, responsive personal site and portfolio for **Por Waiwitlikhit**. Built with **Next.js 14** (App Router) and **Tailwind CSS**, optimised with `next/image`, and deploy‑ready for **Vercel**.
 
-First, run the development server:
+> **Live demo:** 
+
+![Desktop screenshot](./public/desktop_view.png)
+
+---
+
+## ✨ Features
+
+| Category | Highlights |
+|----------|------------|
+| **UI / UX** | • Fully responsive 2‑column hero (portrait + name)<br>• Smooth scrolling nav & sidebar<br>• Light‑weight typography with EB Garamond & Inter|
+| **Performance** | • `next/image` automatic `srcset` & lazy‑loading<br>• CLS‑safe aspect‑ratio utilities|
+| **Developer DX** | • Zero‑config Tailwind JIT<br>• ESLint & Prettier presets<br>• Strict TypeScript support |
+| **Deployment** | • 1‑click Vercel build (< 50 KB JS, A‑grade Lighthouse) |
+
+---
+
+## 🏗 Tech Stack
+
+- **Next.js 14** (App Router, Server Components)
+- **React 18**
+- **Tailwind CSS 3**
+- **TypeScript**
+
+Optional extras (commented):
+
+- **shadcn/ui** component primitives
+- **Framer‑motion** for animation
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+node --version   # ≥ 18
+pnpm --version   # or yarn / npm
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/<your‑handle>/<repo>.git
+cd <repo>
+pnpm install      # or yarn / npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Development server
 
-## Learn More
+```bash
+pnpm dev          # starts on http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Production build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm build && pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Deploying to Vercel
 
-## Deploy on Vercel
+1. Push the repo to GitHub.
+2. Click **New Project** in Vercel.
+3. Select the repo → accept defaults → **Deploy**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> Vercel autogenerates `VERCEL_URL`; no extra env vars required.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📂 Folder Structure
+
+```
+├─ app/                # Next.js App Router pages & layouts
+│  ├─ page.tsx         # <RootRoute> – landing page (profile, about, projects)
+│  └─ globals.css      # Tailwind layer(base|components|utilities)
+├─ public/
+│  ├─ llama_picture.jpeg
+│  └─ … preview images
+├─ components/         # (optional) reusable UI pieces
+├─ tailwind.config.ts
+└─ tsconfig.json
+```
+
+---
+
+## 📜 License
+
+[MIT](LICENSE)
+
+---

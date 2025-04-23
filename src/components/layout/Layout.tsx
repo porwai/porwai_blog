@@ -45,7 +45,7 @@ export default function Layout({ children }: LayoutProps) {
               <li key={item.name}>
                 <Link 
                   href={item.href} 
-                  className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
+                  className={`nav-link font-serif ${activeSection === item.id ? 'active' : ''}`}
                 >
                   {item.name}
                 </Link>

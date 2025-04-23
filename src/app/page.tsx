@@ -62,14 +62,14 @@ export default function Home() {
       {/* Keeping original structure from your first code block */}
       <section id="projects" className="section min-h-screen px-4">
   <div className="max-w-5xl mx-auto">
-    <h2 className="text-3xl mb-12 text-center md:text-left">Projects</h2>
-    <ul className="space-y-10 list-disc list-inside text-base font-sans text-muted-foreground leading-relaxed">
+    <h2 className="text-3xl mb-12 text-center md:text-left mb-8">Projects</h2>
+    <ul className="space-y-10 list-disc list-inside text-base text-lg leading-relaxed text-muted-foreground">
       <li>
         <span className="text-foreground font-medium">Real-time TTS Pipeline:</span> Building a fast and natural text-to-speech system using Orpheus and Whisper.
-      </li>
+      </li><br />
       <li>
         <span className="text-foreground font-medium">Program Auto-generation (aka Cursor):</span> Research project with Professor Aarti Gupta on generating programs automatically from high-level goals.
-      </li>
+      </li><br />
       <li>
         <span className="text-foreground font-medium">Instruction Tuning Pipeline:</span> Replicating and extending recent work on influence-based data selection for LLM tuning.
       </li>
