@@ -2,7 +2,7 @@
 
 A modern, responsive personal site and portfolio for **Por Waiwitlikhit**. Built with **Next.js 14** (App Router) and **Tailwind CSS**, optimised with `next/image`, and deploy‑ready for **Vercel**.
 
-> **Live demo:** 
+> **Live demo:** <https://porwai-blog.vercel.app>
 
 ![Desktop screenshot](./public/desktop_view.png)
 
