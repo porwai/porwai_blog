@@ -23,6 +23,8 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@fontsource/eb-garamond": "^5.2.5",
+    "@fontsource/inter": "^5.2.5",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

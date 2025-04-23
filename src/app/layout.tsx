@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, EB_Garamond } from "next/font/google";
 import "./globals.css";
+import Layout from "@/components/layout/Layout";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -8,11 +9,17 @@ const inter = Inter({
   display: "swap",
 });
 
+const ebGaramond = EB_Garamond({
+  subsets: ["latin"],
+  variable: "--font-eb-garamond",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Porwai Witlikhit | Portfolio",
-  description: "Academic researcher and developer portfolio showcasing papers and projects",
-  keywords: ["portfolio", "academic", "researcher", "developer", "papers"],
-  authors: [{ name: "Porwai Witlikhit" }],
+  title: "Por Waiwitlikhit | Portfolio",
+  description: "Portfolio, about me, projects, and professional work",
+  keywords: ["portfolio", "about me", "projects", "professional work"],
+  authors: [{ name: "Por Waiwitlikhit" }],
 };
 
 export default function RootLayout({
@@ -22,8 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans antialiased`}>
-        {children}
+      <body className={`${inter.variable} ${ebGaramond.variable} font-sans antialiased`}>
+        <Layout>
+          {children}
+        </Layout>
       </body>
     </html>
   );
